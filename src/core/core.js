@@ -299,6 +299,7 @@ class Swiper {
 
   slidesPerViewDynamic(view = 'current', exact = false) {
     const swiper = this;
+    this.recalcSlides();
     const { params, slides, slidesGrid, slidesSizesGrid, size: swiperSize, activeIndex } = swiper;
     let spv = 1;
     if (params.centeredSlides) {
